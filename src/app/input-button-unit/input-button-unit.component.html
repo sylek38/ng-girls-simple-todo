@@ -3,11 +3,13 @@
 </p>
 
 <input
+  class="todo-input"
   #InputElementRef
   [value]="title"
   (keyup.enter)="submitValue('$event.target.value')"
 />
 
-<button (click)="submitValue(InputElementRef.value)">
+<button class="btn"
+        (click)="submitValue(InputElementRef.value)">
   Save
 </button>
